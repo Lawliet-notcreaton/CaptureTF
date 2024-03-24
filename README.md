@@ -6,3 +6,11 @@
 
 
 Вполнил Кулубаев У.С.
+
+
+
+## SSTI
+
+![SSTI cheatsheet workflow](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Server%20Side%20Template%20Injection/Images/serverside.png?raw=true)
+
+https://github.com/swisskyrepo/PayloadsAllTheThings
