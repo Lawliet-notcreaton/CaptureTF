@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты поиска</title>
+</head>
+<body>
+    <h1>Результаты поиска</h1>
+    <ul>
+        {% if products %}
+            {% for product in products %}
+                <li>
+                    <strong>Название:</strong> {{ product.1 }}<br>
+                    <strong>Описание:</strong> {{ product.2 }}<br>
+                    <strong>Цена:</strong> {{ product.3 }}
+                <br><br>
+                </li>
+            {% endfor %}
+        {% else %}
+            <li>Нет продуктов</li>
+        {% endif %}
+    </ul>
+</body>
+</html>

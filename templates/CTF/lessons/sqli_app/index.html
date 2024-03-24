@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика SQL Injection</title>
+</head>
+<body>
+    <h1>Приветствую на практике по SQL Injection</h1>
+    <p>Найти продукт</p>
+    <form action="{% url 'search' %}" method="get">
+        <input type="text" name="query" placeholder="Название продукта">
+        <button type="submit">Поиск</button>
+    </form>
+<div align="justify">Прохождение<br>
+Шаг 1: Понимание уязвимости<br>
+У нас есть страница поиска продуктов, которая выполняет SQL-запрос для поиска продуктов по имени.
+
+
+<br>Шаг 2: Эксплуатация уязвимости<br>
+Введите в поле поиска следующий текст: ' OR '1'='1
+
+<br>Шаг 3: Результат<br>
+После отправки формы вы увидите, что на странице отображаются все продукты из базы данных, а не только те, которые соответствуют вашему запросу. Это произошло из-за того, что введенный текст изменил исходный SQL-запрос, что привело к выбору всех записей из таблицы.
+<br> Шаг 4:  Находим флаг
+    </div>
+<br><br><div align="left"><a href="http://127.0.0.1:8000/CaptureTF/lessons">к заданиям</a></div>
+</body>
+</html>
