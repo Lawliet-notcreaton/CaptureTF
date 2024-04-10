@@ -14,3 +14,34 @@
 ![SSTI cheatsheet workflow](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Server%20Side%20Template%20Injection/Images/serverside.png?raw=true)
 
 https://github.com/swisskyrepo/PayloadsAllTheThings
+
+## Установка
+
+### на телефон
+1. Скачиваем termux
+2. вводим команду
+   ```
+
+    pkg update && pkg upgrade
+
+   ```
+3. устанавливаем python
+```
+pkg install python
+```
+
+4. устанавливаем и активируем виртуальную среду
+```
+python -m venv venv
+source venv/bin/activate
+```
+5. устанавливаем django
+```
+pip install django
+```
+6. запускаем локальный сервер
+```
+cd /CaptureTF
+python manage.py runserver
+```
+7. исследуем, учимся, достигаем!
